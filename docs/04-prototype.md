@@ -1,6 +1,5 @@
 # Fase 4: Prototype (Ontwerp & Techniek)
-05-test.md
-Fase 5: Test (Validatie)
+
  
 ## 1. Wireframes (Lo-Fi)
 ![Wireframes](./assets/wireframes-lofi.png)
