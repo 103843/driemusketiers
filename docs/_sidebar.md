@@ -1,5 +1,5 @@
 - [Empathize](01-empathize.md)
 - [define](02-define.md)
-- [ideate] (03-ideate.md)
-- [prototype] (04-prototype.md)
-- [test] (05-test.md)
+- [ideate](03-ideate.md)
+- [prototype](04-prototype.md)
+- [test](05-test.md)
