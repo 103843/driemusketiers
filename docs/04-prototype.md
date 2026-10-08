@@ -13,4 +13,5 @@
  
 ## 3. Technische Architectuur
 * **Frontend:** [Bijv. HTML, CSS, Vanilla JS]
+![Prototype](./assets/prototype.png)
 * **Backend/Data:** [Bijv. Lokale JSON of Externe API]
