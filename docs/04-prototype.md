@@ -15,4 +15,4 @@
 * **Frontend:** [Bijv. HTML, CSS, Vanilla JS]
 ![Prototype](./assets/prototype.png)
 * **Backend/Data:** [Bijv. Lokale JSON of Externe API]
-![Erd]()
+![Erd](./assets/erd%20beroeps.drawio.png)
