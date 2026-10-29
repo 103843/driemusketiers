@@ -1,0 +1,181 @@
+
+#content {
+    height: 1400px;
+    padding: 25px;
+}
+
+#top-content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+body, html {
+    margin: 0;
+    height: 100%;
+    background-color: #F9FFEC;
+}
+
+h1 {
+    font-family: "Livvic", sans-serif;
+    font-weight: bold;
+}
+
+#top-content > a {
+    padding: 10px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 23px;
+    background-color: #A7D972;
+    color: #232323;
+    font-family: "Livvic", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    border: none;
+
+}
+
+#top-content > input {
+    width: 60%;
+    font-size: 23px;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: #A7D972;
+    font-family: "Livvic", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+#top-content > input:focus {
+    background-color: #f1f1f1;
+}
+
+#main-content {
+    height: 300px;
+    /* border: 2px solid #000; */
+    margin-top: 20px;
+    padding: 10px;
+    overflow-x: scroll; /* Horizontal scroll */
+    /* overflow-y: scroll; */ /* Vertical scroll */
+}
+
+.hero-section {
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/fonts/images/meow.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text {
+    font-size: 100px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.header {
+    box-shadow: 0px 2px 20px 0px #00000052;
+    background-color: #f9ffec;
+    z-index: 2;
+    padding: 10px 16px;
+    color: #f1f1f1;
+}
+
+.content {
+    padding: 16px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.visible {
+    display: block;
+}
+
+.invisible {
+    display: none;
+}
+.sticky + .content {
+    padding-top: 102px;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    width: 30px;
+    cursor: pointer;
+    gap: 6px;
+}
+
+.bar {
+    height: 17px;
+    width: 100%;
+    background-color: #333;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+.nav-links {
+    padding: 16px;
+    margin: 0;
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links > li > a {
+    font-size: 25px;
+    text-decoration: none;
+    color: #232323;
+    font-family: "Livvic", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 12px;
+        width: 50%;
+        padding: 20px;
+
+    }
+    .hamburger {
+        display: flex;
+
+    }
+
+    #menu-toggle:checked ~ .nav-links {
+        display: flex;
+
+    }
+}
+
+#filler {
+    width: 100%;
+    height: 83px;
+}
