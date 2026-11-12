@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/frontend/home/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet">
+    <script defer src="/frontend/home/script.js"></script>
+
+</head>
+<body>
+    <div class="header" id="myHeader">
+        <nav class="navbar">
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </label>
+        </nav>
+
+        <ul class="nav-links">
+            <li><a href="/frontend/home/index.html">Home</a></li>
+            <li><a href="#">Gerechten</a></li>
+            <li><a href="#">Toevoegen +</a></li>
+        </ul>
+    </div>
+    <div id="filler"></div>
+
+    <div id="admin-content">
+         <div id="left-container">
+        <form action="/action_page.php">
+
+            <label for="titel">titel</label>
+            <input type="text" id="titel" name="titel" placeholder="Jouw titel...">
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" placeholder="Jouw description..." style="width: 773px; height: 572px;"></textarea>
+            <input type="file" id="imagefile" name="imagefile">
+
+            <input type="submit" value="Submit">
+        </form>
+    
+
+        </div>
+
+        <div id="right-container">
+        <form action="/action_page.php">
+
+            <label for="titel">Categorie Titel:</label>
+            <input type="text" id="titel" name="titel" placeholder="Jouw titel...">
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" placeholder="Jouw description..." style="height: 632px; width: 792px;"></textarea>
+            <input type="file" id="imagefile" name="imagefile">
+
+            <label for="category">Kies een categorie:</label>
+            <select name="category" id="category" form="carform">
+              <option value="category1">Category1</option>
+              <option value="category2">Category2</option>
+              <option value="category3">Category3</option>
+
+            </select>            
+
+            <input type="submit" value="Submit">
+        </form>        </div>       
+    </div>
+
+
+
+    <footer>
+        <p>© 2026 Drie Musketiers. All rights reserved.</p>
+    </footer>
+</body>
+</html>
